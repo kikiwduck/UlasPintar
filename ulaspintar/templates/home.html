@@ -1023,7 +1023,7 @@
     </footer>
 
     <script>
-        // Script untuk scroll otomatis ke section Cara Kerja
+        
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const anchor = urlParams.get('anchor');
@@ -1054,13 +1054,13 @@
                 sessionStorage.removeItem('scrollToSection');
             }
             
-            // Animasi tambahan untuk feature cards
+            
             const featureCards = document.querySelectorAll('.feature-card');
             featureCards.forEach((card, index) => {
                 card.style.animationDelay = `${index * 0.1}s`;
             });
             
-            // Animasi untuk step cards
+            
             const stepCards = document.querySelectorAll('.step');
             stepCards.forEach((card, index) => {
                 card.style.animationDelay = `${index * 0.15}s`;
