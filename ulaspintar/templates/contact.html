@@ -504,7 +504,7 @@
                     </div>
                     <div class="info-content">
                         <h3>Dokumentasi</h3>
-                        <!-- Link ke section Cara Kerja di halaman home -->
+                        
                         <p><a href="/#cara-kerja">Panduan Pengguna</a></p>
                     </div>
                 </div>
@@ -544,7 +544,7 @@
                     <div class="team-avatar">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
-                    <h3>Donny Sanjaya, S.Kom., M.Kom.</h3>
+                    <h3> Donny Sanjaya, M.Kom.</h3>
                     <p class="role">Project Supervisor</p>
                     <p>Dosen Pembimbing<br>
                     Jurusan Teknik Informatika dan Komputer</p>
@@ -558,18 +558,18 @@
 
         <div class="project-info fade-in">
             <h2><i class="fas fa-info-circle"></i> Tentang Proyek</h2>
-            <p><strong>Nama Proyek:</strong> UlasPintar - Sistem Analisis Sentimen Pelanggan</p>
+            <p><strong>Proyek:</strong>Sistem Analisis Sentimen Pelanggan</p>
             <p><strong>Mata Kuliah:</strong> Proyek Mandiri Lintas Disiplin Ilmu</p>
             <p><strong>Program Studi:</strong> Teknologi Rekayasa Perangkat Lunak</p>
             <p><strong>Tahun:</strong> 2025</p>
             <p style="margin-top: 20px; font-style: italic; color: #00a8cc;">
-                "Memanfaatkan teknologi Machine Learning untuk membantu pelaku bisnis e-commerce 
+                "Memanfaatkan teknologi Machine Learning untuk membantu pelaku bisnis e-commerce<br> 
                 memahami feedback pelanggan dan meningkatkan kualitas produk."
             </p>
         </div>
     </div>
 
-    <!-- Footer dengan background gelap yang sama dengan home -->
+    
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -588,14 +588,12 @@
     </footer>
 
     <script>
-        // JavaScript untuk smooth scrolling jika ada anchor di URL
+        
         document.addEventListener('DOMContentLoaded', function() {
-            // Jika URL mengandung hash, redirect ke home dengan anchor
             const urlParams = new URLSearchParams(window.location.search);
             const anchor = urlParams.get('anchor');
             
             if (anchor === 'cara-kerja') {
-                // Simpan di sessionStorage untuk diakses oleh halaman home
                 sessionStorage.setItem('scrollToSection', 'cara-kerja');
                 window.location.href = '/';
             }
